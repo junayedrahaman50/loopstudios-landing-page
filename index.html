@@ -7,6 +7,10 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@200;300&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Loopstudios landing page</title>
@@ -15,13 +19,40 @@
 <body>
 
   <main class="container">
-    <div class="header-container">
+    <section class="section-header">
       <div class="bg-header">
-        <div class="header">
-
-        </div>
+        <header class="header">
+          <figure class="header-logo">
+            <img src="images/logo.svg" alt="Logo of Loopstudios">
+          </figure>
+          <nav class="header-navbar">
+            <ul class="header-navbar-menu">
+              <li class="header-navbar-menu-item">
+                <a href="javascript:doSomething()">About</a>
+              </li>
+              <li class="header-navbar-menu-item">
+                <a href="javascript:doSomething()">Careers</a>
+              </li>
+              <li class="header-navbar-menu-item">
+                <a href="javascript:doSomething()">Events</a>
+              </li>
+              <li class="header-navbar-menu-item">
+                <a href="javascript:doSomething()">Products</a>
+              </li>
+              <li class="header-navbar-menu-item">
+                <a href="javascript:doSomething()">Support</a>
+              </li>
+            </ul>
+          </nav>
+          <span class="icon_menu" id="icon_menu"></span>
+          <article class="header-title">
+            <h1 class="header-title-text">
+              Immersive experiences that deliver
+            </h1>
+          </article>
+        </header>
       </div>
-    </div>
+    </section>
   </main>
 
 
@@ -62,6 +93,11 @@
 
   © 2021 Loopstudios. All rights reserved. -->
 
+  <script>
+    function doSomething() {
+      console.log("inactive link");
+    }
+  </script>
 </body>
 
 </html>
