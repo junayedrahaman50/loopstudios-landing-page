@@ -214,7 +214,8 @@ a {
   font-weight: 200;
   letter-spacing: 0.448px;
 }
-.gallery-header-btn {
+.gallery-header-btn,
+.gallery-header-btn-mobile {
   width: 159px;
   height: 42px;
   margin-right: -0.32rem;
@@ -227,13 +228,17 @@ a {
   border: 2px solid #000;
   transition: all 0.25s ease-in-out;
 }
+.gallery-header-btn-mobile {
+  display: none;
+}
 
 .gallery-header a {
   font-family: "Alata", sans-serif;
   text-decoration: none;
 }
 
-.gallery-header-btn:hover {
+.gallery-header-btn:hover,
+.gallery-header-btn-mobile:hover {
   background-color: #000;
   color: #fff;
 }
@@ -365,4 +370,157 @@ a {
   font-weight: lighter;
   letter-spacing: 0.288px;
   color: rgb(140, 140, 140);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1280px) {
+  .header {
+    padding: 6.4rem;
+  }
+
+  .section-content {
+    padding: 0 6.4rem;
+  }
+
+  .content-info {
+    padding: 6.4rem;
+    bottom: -9.6rem;
+  }
+
+  .gallery-header {
+    padding: 0 6.4rem;
+  }
+
+  .footer-container {
+    padding: 0 6.4rem;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .section-content {
+    flex-direction: column;
+  }
+
+  .content-info {
+    width: 100%;
+    max-width: none;
+    padding: 4.8rem;
+    position: relative;
+    right: 0;
+    bottom: 0rem;
+    left: 0;
+    text-align: center;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .content-hero {
+    height: auto;
+  }
+
+  .section-gallery {
+    margin-top: 3.2rem;
+  }
+
+  .gallery-header {
+    justify-content: center;
+  }
+
+  .gallery-header-btn {
+    display: none;
+  }
+
+  .gallery-images {
+    max-width: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery-images .gallery-images-img {
+    width: 100%;
+    max-width: 654px;
+    height: 240px;
+    margin-bottom: 2.4rem;
+    background-image: url(images/mobile/image-deep-earth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .gallery-images-img:nth-child(2) {
+    background-image: url(images/mobile/image-night-arcade.jpg);
+  }
+
+  .gallery-images-img:nth-child(3) {
+    background-image: url(images/mobile/image-soccer-team.jpg);
+  }
+
+  .gallery-images-img:nth-child(4) {
+    background-image: url(images/mobile/image-grid.jpg);
+  }
+
+  .gallery-images-img:nth-child(5) {
+    background-image: url(images/mobile/image-from-above.jpg);
+  }
+
+  .gallery-images-img:nth-child(6) {
+    background-image: url(images/mobile/image-pocket-borealis.jpg);
+  }
+
+  .gallery-images-img:nth-child(7) {
+    background-image: url(images/mobile/image-curiosity.jpg);
+  }
+
+  .gallery-images-img:nth-child(8) {
+    background-image: url(images/mobile/image-fisheye.jpg);
+  }
+
+  .gallery-images-cover {
+    width: 100%;
+    max-width: 654px;
+    height: 240px;
+  }
+
+  .gallery-header-btn-mobile {
+    display: flex;
+  }
+
+  .footer {
+    height: 470px;
+    margin-top: 9.6rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-container-left,
+  .footer-container-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo-img {
+    margin-bottom: 3.2rem;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-menu-item {
+    margin: 0 0 1.92rem 0;
+  }
+
+  .footer-socials {
+    margin: 2.4rem 0;
+  }
+
+  .footer-socials-item {
+    margin: 0 0.96rem;
+  }
 }
