@@ -12,7 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@200;300&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
+  <script src="lib/anime.min.js" defer></script>
+  <script src="script.js" defer></script>
   <title>Frontend Mentor | Loopstudios landing page</title>
 </head>
 
@@ -24,9 +25,9 @@
       <div class="bg-header">
         <header class="header">
           <figure class="header-logo">
-            <img src="images/logo.svg" alt="Logo of Loopstudios">
+            <img src="images/logo.svg" class="header-logo-img" alt="Logo of Loopstudios">
           </figure>
-          <nav class="header-navbar">
+          <nav class="header-navbar" id="navbar">
             <ul class="header-navbar-menu">
               <li class="header-navbar-menu-item">
                 <a href="javascript:doSomething()">About</a>
@@ -166,6 +167,7 @@
         </div>
       </div>
     </footer>
+    <div id="mask" class="mask"></div>
   </main>
 
   <script>
